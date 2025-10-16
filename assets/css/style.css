@@ -1,6 +1,11 @@
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: "GothicA1-Regular";
+  src: url(../fonts/Gothic_A1/GothicA1-Regular.ttf);
+}
+
+@font-face {
+  font-family: "MedievalSharp-Regular";
+  src: url(../fonts/MedievalSharp/MedievalSharp-Regular.ttf);
 }
 
 * {
@@ -10,11 +15,356 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: "MedievalSharp-Regular";
+  background-image: url("../img/smoke-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.container {
+/* .container-medium {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50vh;
+} */
+
+.container-big {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 80%px;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100wv;
+}
+
+/* NAV */
+
+nav {
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  max-height: 100%;
+  margin-left: 10%;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  margin-right: 10%;
+  height: 100%;
+  width: 30%;
+  justify-content: space-between;
+  background-image: url("../img/cloud-header.png");
+  background-position: center;
+  background-size: cover;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.nav-buy {
+  background-color: #fbcea0;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.nav-buy a {
+  color: black;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+}
+
+.hero-vid {
+  height: 100vh;
+}
+
+.hero-vid video {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-party {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #fbcea0;
+}
+
+.hero-party a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #fbcea0;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* AWARDS */
+
+.awardsRaces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  margin-bottom: 3%;
+}
+
+.awards {
+  display: flex;
+  width: 66%;
+  align-items: center;
+  border: 1px solid #fbcea0;
+  border-radius: 7px;
+  padding: 2% 3%;
+  background-image: url(../img/awards-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.award-BG3 {
+  height: 100%;
+  width: 26%;
+}
+
+.award-BG3 a {
+  text-decoration: none;
+}
+
+.award-BG3 div:first-child a {
+  color: white;
+  font-family: "GothicA1-Regular";
+  font-size: 1.2rem;
+}
+
+.award-BG3 div:last-child a {
+  color: #fbcea0;
+  font-size: 3rem;
+}
+
+.award-img {
+  width: 21.5%;
+}
+
+.award-img img {
+  width: 90%;
+}
+
+/* RACES */
+
+.races {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 10%;
+}
+
+.races h2 {
+  color: #fbcea0;
+  font-size: 2rem;
+}
+
+.races-container {
+  display: flex;
+  width: 100%;
+  gap: 3%;
+}
+
+.races-profils {
+  width: 47%;
+  border: 1px solid #fbcea0;
+  border-radius: 7px;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("../img/races-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.race-card {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.race-card:last-child,
+.race-card:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.race-card p {
+  color: white;
+  margin-top: 8%;
+}
+
+.race-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.race-img img {
+  width: 50%;
+  object-fit: cover;
+}
+
+/* RACE-DESCRIPTION */
+
+.race-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 53%;
+  border: 1px solid #fbcea0;
+  border-radius: 7px;
+  text-align: center;
+  color: #fbcea0;
+}
+.race-profil-description {
+  width: 15%;
+  margin-top: 3%;
+}
+
+.race-profil-paragraph h3 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin: 5% 0 0 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom: 1px solid #fbcea0;
+  display: inline-block;
+}
+
+.race-profil-paragraph p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+  font-size: 1.3rem;
+  margin: 10%;
+  padding-bottom: 10%;
+  border-bottom: 1px solid #fbcea0;
+  display: inline-block;
+}
+
+.race-profil-description img {
+  width: 100%;
+}
+
+/* EDITIONS */
+
+.editions {
+  background-image: url("../img/buy-now-background.jpg");
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  padding-left: 12%;
+}
+
+.edition-img {
+  height: 85%;
+  width: auto;
+  margin: auto 0;
+}
+
+.edition-img img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.edition-description {
+  margin-top: 13%;
+  margin-right: 13%;
+}
+
+.editions h2 {
+  color: #fbcea0;
+  font-size: 2.5rem;
+  margin: 0 0 4% 0;
+  font-weight: 500;
+}
+
+.editions h3 {
+  color: white;
+  font-family: "GothicA1-Regular";
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.edition-description p {
+  color: white;
+  font-family: "GothicA1-Regular";
+  font-size: 1.2rem;
+}
+
+.edition-btn a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #fbcea0;
+  border-radius: 7px;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.edition-paragraph {
+  margin: 6% 0 0 0;
 }

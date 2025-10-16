@@ -9,59 +9,127 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="logo">
-        <img src="assets/img/logo-bg3.png" alt="" />
-      </div>
       <nav>
+        <div class="logo">
+          <img src="assets/img/logo-bg3.png" alt="" />
+        </div>
         <ul>
-          <li>About</li>
-          <li>Races</li>
-          <li>News</li>
-          <li>Gallery</li>
-          <li class="nav-buy">Buy now</li>
+          <li><a href="">About</a></li>
+          <li><a href="">Races</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Gallery</a></li>
+          <li class="nav-buy"><a href="">Buy now</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
+
       <!-- HERO -->
       <section class="hero">
-        <h1>IT'S PARTY TIME</h1>
-        <a href="">GET IT NOW!</a>
+        <div class="hero-vid">
+          <video autoplay muted loop playsinline class="bg-video">
+            <source src="assets/videos/hero-bg.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-party">
+          <h1>IT'S PARTY TIME</h1>
+          <a href="">GET IT NOW!</a>
+        </div>
       </section>
+    </header>
 
+    <!-- MAIN -->
+    <main>
       <!-- AWARDS & RACES -->
-      <section>
-        <div class="awards">
+      <section class="awardsRaces">
+        <div class="awards container-medium">
           <div class="award-BG3">
-            <div><a href="">Legal Information</a></div>
+            <div><a href="">BALDUR'S GATE 3</a></div>
             <div><a href="">AWARDS</a></div>
           </div>
-          <div><img src="assets/img/1.png" alt="" /></div>
-          <div><img src="assets/img/2.png" alt="" /></div>
-          <div><img src="assets/img/3.png" alt="" /></div>
-          <div><img src="assets/img/4.png" alt="" /></div>
+          <div class="award-img"><img src="assets/img/1.png" alt="" /></div>
+          <div class="award-img"><img src="assets/img/2.png" alt="" /></div>
+          <div class="award-img"><img src="assets/img/3.png" alt="" /></div>
+          <div class="award-img"><img src="assets/img/4.png" alt="" /></div>
         </div>
 
         <div class="races">
           <h2>GAME RACES</h2>
-          <div>
-            <div>
-              <div><img src="assets/img/elf.png" alt="" /></div>
-              <div><img src="assets/img/tiefling.png" alt="" /></div>
-              <div><img src="assets/img/drow.png" alt="" /></div>
-              <div><img src="assets/img/human.png" alt="" /></div>
-              <div><img src="assets/img/githyanki.png" alt="" /></div>
-              <div><img src="assets/img/dwarf.png" alt="" /></div>
-              <div><img src="assets/img/half-elf.png" alt="" /></div>
-              <div><img src="assets/img/halfling.png" alt="" /></div>
-              <div><img src="assets/img/gnome.png" alt="" /></div>
-              <div><img src="assets/img/half-orc.png" alt="" /></div>
-              <div><img src="assets/img/dragonborn.png" alt="" /></div>
+          <div class="races-container">
+            <div class="races-profils">
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/elf.png" alt="" />
+                </div>
+                <p>Elf</p>
+              </div>
+
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/tiefling.png" alt="" />
+                </div>
+                <p>Tielfling</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/drow.png" alt="" />
+                </div>
+                <p>Drow</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/human.png" alt="" />
+                </div>
+                <p>Human</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/githyanki.png" alt="" />
+                </div>
+                <p>Githyanki</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/dwarf.png" alt="" />
+                </div>
+                <p>Dwarf</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/half-elf.png" alt="" />
+                </div>
+                <p>Half-elf</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/halfling.png" alt="" />
+                </div>
+                <p>Halfling</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/gnome.png" alt="" />
+                </div>
+                <p>Gnome</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/half-orc.png" alt="" />
+                </div>
+                <p>Half-orc</p>
+              </div>
+              <div class="race-card">
+                <div class="race-img">
+                  <img src="assets/img/dragonborn.png" alt="" />
+                </div>
+                <p>Dragonborn</p>
+              </div>
             </div>
 
             <div class="race-description">
-              <div><img src="assets/img/elf.png" alt="" /></div>
-              <div>
+              <div class="race-profil-description">
+                <img src="assets/img/elf.png" alt="" />
+              </div>
+              <div class="race-profil-paragraph">
+                <h3>Elf</h3>
                 <p>
                   With etheral countenances and long lifespans, elves are at
                   homt with nature 's power, flourishing in light and dark
@@ -79,7 +147,7 @@
           <img src="assets/img/Standard-min.png" alt="" />
         </div>
         <div class="edition-description">
-          <p>Baldur's gate 3</p>
+          <h3>Baldur's gate 3</h3>
           <h2>BUY NOW</h2>
           <div class="edition-btn">
             <a href="">Standard</a>
