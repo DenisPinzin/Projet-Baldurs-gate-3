@@ -45,7 +45,7 @@ nav {
   height: 14vh;
   display: flex;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
 }
 
 .logo {
@@ -440,9 +440,8 @@ main {
 
 .card {
   border: 1px solid #fbcea0;
-  width: 33%;
-  min-height: 35vh;
-  height: auto;
+  width: 100%;
+  height: 35vh;
   border-radius: 10px;
   position: relative;
 }
@@ -493,7 +492,6 @@ main {
 .card h3 {
   color: #fbcea0;
   font-size: 1.5rem;
-  word-break: break;
   word-break: break;
 }
 
@@ -573,7 +571,7 @@ main {
 /* DIGI-DOWNLOADS */
 
 .digi-downloads {
-  width: 100%;
+  width: 80%;
   display: flex;
 
   margin-bottom: 6%;
@@ -595,7 +593,7 @@ main {
 .digi-bg img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .digi-paragraph {
   padding: 5%;
@@ -672,6 +670,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-right: 2%;
+}
+
+.services-sections:last-child {
+  padding-right: 0%;
 }
 
 .join h3,
@@ -725,4 +728,262 @@ footer {
 
 .privacy a:hover {
   text-decoration: underline;
+}
+
+/* X+x+ RESPONSIVE +x+X */
+
+/* SUPPERIOR 1180 WIDTH */
+@media screen and (min-width: 1180px) {
+  /* COMMUNITY */
+  .card {
+    border: 1px solid #fbcea0;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (max-width: 1180px) {
+  /* COMMUNITY */
+  .card {
+    border: 1px solid #fbcea0;
+    width: 100%;
+    height: 34vh;
+    border-radius: 10px;
+    position: relative;
+  }
+}
+
+/* TABLETTE */
+
+@media screen and (max-width: 768px) {
+  /* INNER */
+  nav ul {
+    display: none;
+  }
+
+  .inner {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .inner div {
+    border: 4px solid #fbcea0;
+    border-radius: 4px;
+    margin: 4px;
+    width: 50px;
+  }
+
+  .inner:hover div {
+    border-color: white;
+  }
+
+  /* NAV */
+  .logo {
+    height: 70%;
+    align-self: center;
+  }
+
+  /* AWARDS */
+
+  .awards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .award-BG3 {
+    width: 100%;
+  }
+
+  .award-img {
+    width: 25%;
+  }
+
+  /* RACES */
+  .races {
+    padding-bottom: 10%;
+  }
+
+  .races-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .races-profils {
+    width: 100%;
+    padding: 29;
+    margin-bottom: 8%;
+  }
+
+  .race-description {
+    width: 90%;
+    height: 55vh;
+    justify-content: space-evenly;
+  }
+
+  .race-profil-description {
+    width: 33%;
+  }
+
+  /* EDITION */
+  .editions {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+  }
+
+  .edition-description {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .edition-paragraph p {
+    font-size: 1rem;
+    margin: 1%;
+    padding: 0;
+  }
+
+  .edition-img {
+    height: 50%;
+  }
+
+  .edition-img img {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .edition-btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* COMMUNITY */
+  .community-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: 250px;
+  }
+
+  .community-title h2 {
+    margin: 5% 0;
+  }
+
+  .community-title h3 {
+    margin-top: 10%;
+  }
+
+  .socials-services {
+    flex-direction: column;
+    padding-top: 10%;
+  }
+
+  /* DIGI-DOWNLOADS */
+  .digi-paragraph {
+    width: 90%;
+  }
+
+  /* FOOTER */
+
+  .social {
+    width: 100%;
+    align-items: center;
+  }
+
+  .services {
+    width: 100%;
+  }
+
+  .services-sections {
+    padding-left: 4%;
+  }
+
+  .services-sections h3 {
+    font-size: 1.1rem;
+  }
+
+  .join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .join h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+  /* NAV */
+
+  .logo {
+    padding-left: 20%;
+  }
+
+  /* COMMUNITY */
+  .card {
+    height: 30vh;
+  }
+
+  /* GALERY */
+  .gallery-all-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8%;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30%;
+  }
+
+  /* FOOTER */
+  .services {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .services-sections {
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .privacy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 0;
+  }
+
+  .privacy a {
+    margin: 3%;
+  }
 }
