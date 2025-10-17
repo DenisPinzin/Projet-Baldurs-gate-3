@@ -82,14 +82,22 @@ nav a {
   color: white;
 }
 
+nav a:hover {
+  color: #fbcea0;
+}
+
 .nav-buy {
   background-color: #fbcea0;
   padding: 15px;
   border-radius: 7px;
+  color: black;
+  border: 1px solid #fbcea0;
 }
 
-.nav-buy a {
-  color: black;
+.nav-buy:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid #fbcea0;
 }
 
 /* HERO */
@@ -131,6 +139,10 @@ h1 {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+}
+
+.hero-party a:hover {
+  background-color: #c09e7b;
 }
 
 /* MAIN */
@@ -217,7 +229,7 @@ main {
   width: 47%;
   border: 1px solid #fbcea0;
   border-radius: 7px;
-  padding: 5%;
+  padding: 5% 5% 10% 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -229,11 +241,17 @@ main {
 
 .race-card {
   width: 33%;
+  height: 22%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 10%;
+  border: 1px solid transparent;
+}
+
+.race-card:hover {
+  border: 1px solid #fbcea0;
 }
 
 .race-card:last-child,
@@ -361,6 +379,10 @@ main {
   gap: 1%;
 }
 
+.edition-btn a:hover {
+  background-color: #c09e7b;
+}
+
 .edition-btn a {
   text-decoration: none;
   color: white;
@@ -419,7 +441,7 @@ main {
 .card {
   border: 1px solid #fbcea0;
   width: 33%;
-  min-height: 41vh;
+  min-height: 35vh;
   height: auto;
   border-radius: 10px;
   position: relative;
@@ -431,6 +453,11 @@ main {
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 0;
+}
+
+.card:hover::after {
+  transition: background 0.2s ease-in;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .card-container {
@@ -520,6 +547,20 @@ main {
 .gal-img {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.gal-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.gal-img:hover::after {
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.2s ease-in;
 }
 
 .gal-img img {
@@ -599,6 +640,10 @@ main {
   backdrop-filter: blur(5px);
 }
 
+.digi-btn:hover {
+  background-color: #c09e7b;
+}
+
 /* FOOTER */
 
 footer {
@@ -662,6 +707,10 @@ footer {
   padding: 0 0 20px 0;
 }
 
+.services a:hover {
+  text-decoration: underline;
+}
+
 .privacy {
   width: 80%;
   padding: 1% 0 3% 0;
@@ -672,4 +721,8 @@ footer {
   font-family: "GothicA1-Regular";
   text-decoration: none;
   padding-right: 1%;
+}
+
+.privacy a:hover {
+  text-decoration: underline;
 }
