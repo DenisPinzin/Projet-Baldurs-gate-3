@@ -23,12 +23,6 @@ body {
   background-attachment: fixed;
 }
 
-/* .container-medium {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 50vh;
-} */
-
 .container-big {
   width: 100%;
   max-width: 1080px;
@@ -50,14 +44,15 @@ nav {
   width: 100%;
   height: 14vh;
   display: flex;
-  justify-content: space-between;
   position: fixed;
   z-index: 1;
 }
 
 .logo {
   max-height: 100%;
-  margin-left: 10%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
 }
 
 .logo img {
@@ -69,13 +64,16 @@ nav ul {
   align-items: center;
   list-style: none;
   margin: 0;
-  margin-right: 10%;
   height: 100%;
-  width: 30%;
-  justify-content: space-between;
+  width: 70%;
+  justify-content: flex-end;
   background-image: url("../img/cloud-header.png");
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
+  padding: 0 10% 0 0;
+  margin: 0;
+  gap: 5%;
 }
 
 nav a {
@@ -168,7 +166,7 @@ main {
 
 .award-BG3 {
   height: 100%;
-  width: 26%;
+  width: 25%;
 }
 
 .award-BG3 a {
@@ -178,16 +176,16 @@ main {
 .award-BG3 div:first-child a {
   color: white;
   font-family: "GothicA1-Regular";
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .award-BG3 div:last-child a {
   color: #fbcea0;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .award-img {
-  width: 21.5%;
+  width: 17.75%;
 }
 
 .award-img img {
@@ -288,9 +286,9 @@ main {
 }
 
 .race-profil-paragraph p {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "GothicA1-Regular";
   font-weight: lighter;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 10%;
   padding-bottom: 10%;
   border-bottom: 1px solid #fbcea0;
@@ -306,7 +304,6 @@ main {
 .editions {
   background-image: url("../img/buy-now-background.jpg");
   object-fit: cover;
-  background-position: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -368,10 +365,11 @@ main {
   color: white;
   border: 1px solid #fbcea0;
   border-radius: 7px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
+  margin-bottom: 1%;
 }
 
 .edition-paragraph {
@@ -385,7 +383,7 @@ main {
 
 .community {
   padding-top: 2%;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,7 +408,7 @@ main {
 
 .community-title h2 {
   color: #fbcea0;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 500;
   margin: 1% 0;
 }
@@ -424,7 +422,7 @@ main {
 .card {
   border: 1px solid #fbcea0;
   width: 33%;
-  min-height: 50vh;
+  min-height: 41vh;
   height: auto;
   border-radius: 10px;
   position: relative;
@@ -451,7 +449,6 @@ main {
   object-fit: cover;
   background-position: center;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 .commu-cd2 {
@@ -459,7 +456,6 @@ main {
   object-fit: cover;
   background-position: center;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 .commu-cd3 {
@@ -467,20 +463,19 @@ main {
   object-fit: cover;
   background-position: center;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
 .card h3 {
   color: #fbcea0;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  word-break: break;
   word-break: break;
 }
 
 .card p {
   font-family: "GothicA1-Regular";
   color: white;
-  word-break: break;
   width: auto;
 }
 
@@ -494,6 +489,7 @@ main {
 .gallery {
   display: flex;
   justify-content: center;
+  margin-bottom: 9%;
 }
 
 .gallery-container {
@@ -538,4 +534,157 @@ main {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+/* DIGI-DOWNLOADS */
+
+.digi-downloads {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6%;
+}
+
+.digi-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  padding: 2% 2% 2% 0;
+}
+
+.digi-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.digi-container {
+  width: 66%;
+  height: 50vh;
+  border: 1px solid #fbcea0;
+  z-index: 1;
+  padding: 0;
+  position: relative;
+}
+
+.digi-paragraph {
+  padding: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.digi-container h3 {
+  color: white;
+  font-family: "GothicA1-Regular";
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.digi-container h2 {
+  color: #fbcea0;
+  font-size: 2.5rem;
+  margin: 1% 0;
+  font-weight: 500;
+}
+
+.digi-container p {
+  font-family: "GothicA1-Regular";
+  color: white;
+  width: auto;
+}
+
+.digi-btn {
+  align-self: flex-start;
+  width: auto;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #fbcea0;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials-services {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fbcea0;
+  border-top: 1px solid #fbcea0;
+  width: 80%;
+  padding: 3%;
+}
+
+.social {
+  width: 40%;
+  padding-right: 5%;
+}
+
+.socials-services h2 {
+  color: #fbcea0;
+}
+
+.services-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.join h3,
+.join p {
+  color: white;
+  font-family: "GothicA1-Regular";
+}
+
+.join h3 {
+  margin-top: 0;
+}
+
+.join h3,
+.join h2,
+.join p {
+  padding: 2%;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.services h3 {
+  color: #fbcea0;
+}
+
+.services a {
+  color: #fbcea0;
+  font-family: "GothicA1-Regular";
+  text-decoration: none;
+  padding: 0 0 20px 0;
+}
+
+.privacy {
+  width: 80%;
+  padding: 1% 0 3% 0;
+}
+
+.privacy a {
+  color: white;
+  font-family: "GothicA1-Regular";
+  text-decoration: none;
+  padding-right: 1%;
 }
