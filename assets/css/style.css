@@ -113,8 +113,11 @@ nav a:hover {
 /* HERO */
 
 .hero {
-  position: relative;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
 }
 
 .hero-vid {
@@ -129,21 +132,12 @@ nav a:hover {
   object-fit: cover;
 }
 
-.hero-party {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  height: 100%;
-  padding-bottom: 5%;
-}
-
 h1 {
   color: #fbcea0;
-  z-index: 4;
+  z-index: 1;
 }
 
-.hero-party a {
+.hero a {
   text-decoration: none;
   color: white;
   border: 1px solid #fbcea0;
@@ -152,9 +146,10 @@ h1 {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  margin-bottom: 5%;
 }
 
-.hero-party a:hover {
+.hero a:hover {
   background-color: #c09e7b;
 }
 
