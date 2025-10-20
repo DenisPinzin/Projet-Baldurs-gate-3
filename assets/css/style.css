@@ -948,6 +948,48 @@ footer {
     height: 30vh;
   }
 
+  /* RACES PROFILS */
+
+  .races {
+    width: 100%;
+  }
+
+  .races-profils {
+    width: 100%;
+    flex-wrap: nowrap;
+    height: 15vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    margin-bottom: 7%;
+    padding: 0;
+  }
+
+  .race-card {
+    height: 100%;
+    margin: 0 35px;
+  }
+
+  .race-card p {
+    padding: 0 10px 0 10px;
+    text-align: center;
+  }
+
+  .race-img {
+    width: 70px;
+    height: 70px;
+    padding: 0 auto;
+  }
+
+  .race-img img {
+    flex: 0 0 auto;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+    display: block;
+  }
+
   /* GALERY */
   .gallery-all-img {
     display: grid;
